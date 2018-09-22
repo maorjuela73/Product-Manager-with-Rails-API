@@ -83,6 +83,9 @@ test:
 #
 production:
   <<: *default
-  database: products_production
-  username: products
+  host: ec2-54-83-27-165.compute-1.amazonaws.com
+  database: dfcli5ajab03o0
+  username: qtysqlrlhxsikb
+  password: 3178d3c62ab467ec3a20169d07aaf15f4be706dd6adc94169328e6e469106b36
+  port: 5432
   password: <%= ENV['PRODUCTS_DATABASE_PASSWORD'] %>
